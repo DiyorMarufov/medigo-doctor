@@ -10,7 +10,7 @@ const SignIn = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const tel = `+${phone.current?.value}`;
+    const tel = `+998${phone.current?.value}`;
     signInMutate(
       { phone: tel },
       {
@@ -70,3 +70,4 @@ const SignIn = () => {
 };
 
 export default memo(SignIn);
+
